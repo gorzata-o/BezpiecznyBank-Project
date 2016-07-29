@@ -1,0 +1,33 @@
+.triple2 {
+	background-color: white;
+	.col-4 {
+		color: $darkMainColor;
+		h4 {
+			margin-top: 24px;
+			font-weight: normal;
+		}
+		@media (max-width: 700px) {
+			width: 100%;
+		}
+		.adds, .noAdds {
+			margin-bottom: 20px;
+			list-style: none;
+		
+			li {
+				font-size: 12px;
+				font-weight: normal;
+				color: $darkMainColor;
+				line-height: 18px;
+				margin-top: 10px;
+				margin-left: 10px;
+				
+			}
+		}
+		.adds {
+			display: list-item;
+		}
+		.noAdds {
+			display: none;
+		}
+	}	
+}

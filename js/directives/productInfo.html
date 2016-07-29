@@ -1,0 +1,6 @@
+<div class="col-4" ng-repeat="product in products">
+	<img ng-src=" {{ product.icon }} ">
+	<h4> {{ product.name }}</h4>
+	<p> {{ product.promo }} </p>
+	<button><a ng-href=" {{ product.newPage }} "> {{ product.buttonText }} </a></button>
+</div>	

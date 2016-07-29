@@ -1,0 +1,374 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,700);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1rem;
+  font-family: 'raleway', verdana, sans-serif;
+  font-weight: 100; }
+
+.grid-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto; }
+
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+  clear: both; }
+
+[class*='col-'] {
+  float: left;
+  min-height: 1px;
+  width: 8.88%;
+  padding: 12px; }
+
+.col-3 {
+  width: 24.99%; }
+
+.col-4 {
+  width: 33.33%; }
+
+.col-6 {
+  width: 50%; }
+  @media (max-width: 700px) {
+    .col-6 {
+      width: 100%; } }
+
+.col-12 {
+  width: 100%; }
+
+.triple1 {
+  background-color: #55C5DB; }
+  .triple1 .col-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white; }
+    @media (max-width: 700px) {
+      .triple1 .col-4 {
+        width: 100%;
+        margin-top: 10px; } }
+  .triple1 img {
+    margin-top: 40px; }
+  .triple1 h4 {
+    font-size: 24px;
+    margin-top: 30px; }
+  .triple1 p {
+    font-size: 12px;
+    margin-top: 10px; }
+  .triple1 button {
+    width: 140px;
+    height: 30px;
+    background-color: #55C5DB;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 40px; }
+    .triple1 button a {
+      text-decoration: none;
+      color: white; }
+
+.triple2 {
+  background-color: white; }
+  .triple2 .col-4 {
+    color: #272727; }
+    .triple2 .col-4 h4 {
+      margin-top: 24px;
+      font-weight: normal; }
+    @media (max-width: 700px) {
+      .triple2 .col-4 {
+        width: 100%; } }
+    .triple2 .col-4 .adds, .triple2 .col-4 .noAdds {
+      margin-bottom: 20px;
+      list-style: none; }
+      .triple2 .col-4 .adds li, .triple2 .col-4 .noAdds li {
+        font-size: 12px;
+        font-weight: normal;
+        color: #272727;
+        line-height: 18px;
+        margin-top: 10px;
+        margin-left: 10px; }
+    .triple2 .col-4 .adds {
+      display: list-item; }
+    .triple2 .col-4 .noAdds {
+      display: none; }
+
+body {
+  background-color: #EBEBEB; }
+
+header {
+  position: relative; }
+
+.rightPart {
+  position: relative;
+  float: right; }
+
+.search {
+  padding: 6px 0 6px 15px;
+  margin: auto;
+  margin-right: 0;
+  background-color: white;
+  color: #EBEBEB;
+  border: 1px solid #EBEBEB; }
+
+.searchBtn {
+  position: relative;
+  margin-left: 0;
+  padding: 6px 13px 6px 13px;
+  border: 1px solid #EBEBEB;
+  background-color: white;
+  color: #55C5DB;
+  cursor: pointer; }
+
+.logIn {
+  width: 140px;
+  height: 30px;
+  color: white;
+  background-color: #55C5DB;
+  border: 1px solid #55C5DB;
+  border-radius: 5px; }
+
+nav {
+  width: 100%;
+  height: 4rem;
+  background-color: white;
+  position: relative; }
+  nav .menuElement {
+    display: none;
+    float: left;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: normal; }
+    @media (max-width: 800px) {
+      nav .menuElement {
+        display: inline; } }
+  nav .menuElements, nav .tinyMenu {
+    float: left;
+    margin-top: 20px; }
+    nav .menuElements li, nav .tinyMenu li {
+      list-style: none;
+      font-size: 12px; }
+  @media (max-width: 800px) {
+    nav .menuElements {
+      display: none; } }
+  nav .menuElements li {
+    display: inline; }
+  nav .tinyMenu {
+    display: none;
+    z-index: 5;
+    position: absolute;
+    background-color: white;
+    top: 30px; }
+    @media (max-width: 800px) {
+      nav .tinyMenu {
+        width: 30%; } }
+    @media (max-width: 650px) {
+      nav .tinyMenu {
+        width: 45%; } }
+    nav .tinyMenu li {
+      border: 1px solid #55C5DB;
+      border-radius: 2px; }
+  nav a {
+    text-decoration: none;
+    color: #272727; }
+  nav a:hover {
+    color: #55C5DB; }
+
+.bankName {
+  float: right;
+  font-size: 24px;
+  margin-top: 20px; }
+
+.blue {
+  height: 20px;
+  background-color: #55C5DB;
+  background-repeat: repeat-x;
+  background-image: url("../images/triangles.jpg"); }
+
+.banner {
+  color: white;
+  padding: 0;
+  position: relative; }
+  .banner img {
+    width: 100%; }
+  .banner .travel {
+    width: 36%;
+    height: 50%;
+    background-color: #55C5DB;
+    border: 1px solid #55C5DB;
+    border-radius: 10px 0 0 10px;
+    position: absolute;
+    top: 20%;
+    left: 64%; }
+    @media (max-width: 1020px) {
+      .banner .travel {
+        width: 50%;
+        height: 60%;
+        top: 15%;
+        left: 50%; } }
+    @media (max-width: 700px) {
+      .banner .travel {
+        height: 100%;
+        top: 0;
+        border-radius: 0; } }
+    .banner .travel p {
+      font-size: 1em;
+      margin-top: 40px;
+      margin-left: 30px; }
+      @media (max-width: 850px) {
+        .banner .travel p {
+          font-size: 0.7em;
+          mrgin-top: 30px; } }
+      @media (max-width: 460px) {
+        .banner .travel p {
+          font-size: 1em;
+          margin-top: 15px; } }
+    .banner .travel h3 {
+      font-size: 1.8em;
+      font-weight: 100;
+      margin-top: 10px;
+      margin-left: 30px; }
+      @media (max-width: 850px) {
+        .banner .travel h3 {
+          font-size: 1.2em; } }
+      @media (max-width: 460px) {
+        .banner .travel h3 {
+          font-size: 1em; } }
+    .banner .travel button {
+      width: 50%;
+      height: 20%;
+      margin-top: 60px;
+      margin-left: 30px;
+      color: white;
+      font-size: 18px;
+      font-weight: 100;
+      background-color: #272727;
+      border: 1px solid #272727;
+      border-radius: 10px; }
+      @media (max-width: 850px) {
+        .banner .travel button {
+          font-size: 14px;
+          margin-top: 40px; } }
+      @media (max-width: 460px) {
+        .banner .travel button {
+          font-size: 0.7em;
+          margin-top: 20px; } }
+
+.loans {
+  background-color: white; }
+  .loans a {
+    font-size: 20px;
+    color: #55C5DB;
+    float: right; }
+  .loans .loan {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0; }
+    .loans .loan .keysPic {
+      width: 40%;
+      height: 200px;
+      margin: 0;
+      background-image: url("../images/keys.jpg");
+      background-repeat: no-repeat; }
+      .loans .loan .keysPic p {
+        visibility: hidden; }
+      @media (max-width: 800px) {
+        .loans .loan .keysPic {
+          display: none; } }
+    .loans .loan .keysText {
+      width: 60%;
+      height: 100%;
+      position: relative; }
+      .loans .loan .keysText h4 {
+        font-size: 24px;
+        font-weight: normal; }
+      .loans .loan .keysText p {
+        margin-top: 40px;
+        margin-right: 20px; }
+      .loans .loan .keysText a {
+        margin-top: 20px;
+        margin-right: 20px;
+        float: right; }
+  .loans .credit {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .loans .credit h4 {
+      font-size: 24px;
+      font-weight: normal;
+      width: 100%;
+      text-align: center;
+      margin-top: 30px; }
+    .loans .credit div {
+      margin-top: 20px;
+      width: 100%;
+      position: relative; }
+      .loans .credit div p {
+        width: 50%; }
+      .loans .credit div .left {
+        float: left;
+        padding-left: 40px; }
+      .loans .credit div .right {
+        float: right;
+        text-align: right;
+        padding-right: 40px; }
+    .loans .credit .ui-slider .ui-slider-handle {
+      width: 3.5em;
+      height: 2em;
+      background-color: #55C5DB;
+      border: 1px solid #55C5DB;
+      border-radius: 5px; }
+    .loans .credit .ui-slider .ui-slider-range {
+      background-color: #EBEBEB; }
+    .loans .credit #slider1, .loans .credit #slider2 {
+      width: 85%;
+      margin-left: 10px; }
+    .loans .credit .creditEnd {
+      width: 100%;
+      position: relative; }
+      .loans .credit .creditEnd .line {
+        width: 100%;
+        height: 2px;
+        margin-top: 40px;
+        background-color: #55C5DB; }
+      .loans .credit .creditEnd .amount {
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap; }
+        .loans .credit .creditEnd .amount p {
+          width: auto;
+          display: inline; }
+        .loans .credit .creditEnd .amount input {
+          width: 20%;
+          display: inline-block;
+          color: #55C5DB;
+          border: none;
+          margin-left: 5px; }
+        .loans .credit .creditEnd .amount input + p {
+          color: #55C5DB; }
+      .loans .credit .creditEnd a {
+        font-size: 20px;
+        color: #55C5DB;
+        float: right;
+        margin-top: 20px; }
+
+footer {
+  color: grey; }
+  footer p {
+    font-size: 16px; }
+  footer div {
+    position: relative; }
+    footer div p {
+      font-size: 12px;
+      display: inline-block;
+      float: left; }
+  footer ul {
+    list-style: none;
+    float: right; }
+  footer li {
+    display: inline-block;
+    font-size: 12px; }

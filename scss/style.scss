@@ -1,0 +1,338 @@
+@import '_reset';
+@import '_variables';
+@import '_grid';
+@import '_triple1';
+@import '_triple2';
+
+body {
+	background-color: $backgroundColor;
+}
+
+header {
+	position: relative;
+}
+.rightPart {
+	position: relative;
+	float: right;
+}
+.search { 
+	padding:6px 0 6px 15px;
+	margin:auto;
+	margin-right: 0; 
+	background-color: white; 
+	color: $backgroundColor;
+	border: 1px solid $backgroundColor;
+}
+.searchBtn {
+	position:relative; 
+	margin-left: 0;
+	padding: 6px 13px 6px 13px;
+	border: 1px solid $backgroundColor;
+	background-color: white;
+	color: $mainColor;
+	cursor: pointer;
+}
+.logIn {
+	width: 140px;
+	height: 30px;
+	color: white;
+	background-color: $mainColor;
+	border: 1px solid $mainColor;
+	border-radius: 5px;
+}
+nav {
+	width: 100%;
+	height: 4rem;
+	background-color: white;
+	position: relative;
+	.menuElement {
+		display: none;
+		float: left;
+		margin-top: 20px;
+		font-size: 20px;
+		font-weight: normal;
+		@media (max-width: 800px) {
+			display: inline;
+		}
+	}
+	.menuElements, .tinyMenu {
+		float: left;
+		margin-top: 20px;
+	
+		li {
+			list-style: none;
+			font-size: 12px;
+		}
+	}
+	.menuElements {
+		@media (max-width: 800px) {
+			display: none;
+		}
+		li {
+			display: inline;
+		}
+	}
+	.tinyMenu {
+		display: none;
+		z-index: 5;
+		position: absolute;
+		background-color: white;
+		top: 30px;
+		@media (max-width: 800px) {
+			width: 30%;
+		}
+		@media (max-width: 650px) {
+			width: 45%;
+		}
+		li {
+			border: 1px solid $mainColor;
+			border-radius: 2px;
+		}	
+	}
+	
+	a {
+		text-decoration: none;
+		color: $darkMainColor;
+	}
+	a:hover {
+		color: $mainColor;
+	}
+}
+.bankName {
+	float: right;
+	font-size: 24px;
+	margin-top: 20px;	
+}
+.blue {
+	height: 20px;
+	background-color: $mainColor;
+	background-repeat: repeat-x;
+	background-image: url("../images/triangles.jpg");
+
+}
+.banner {
+	color: white;
+	padding: 0;
+	position: relative;
+	img {
+		width: 100%;
+	}
+	.travel {
+		width: 36%;
+		height: 50%;
+		background-color: $mainColor;
+		border: 1px solid $mainColor;
+		border-radius: 10px 0 0 10px;
+		position: absolute;
+		top: 20%;
+		left: 64%;
+		@media (max-width: 1020px) {
+			width: 50%;
+			height: 60%;
+			top: 15%;
+			left: 50%;
+		}
+		@media (max-width: 700px) {
+			height: 100%;
+			top: 0;
+			border-radius: 0;
+		}
+		p {
+			font-size: 1em;
+			margin-top:40px;
+			margin-left: 30px;
+			@media (max-width: 850px) {
+				font-size: 0.7em;
+				mrgin-top: 30px;
+			}
+			@media (max-width: 460px) {
+				font-size: 1em;
+				margin-top: 15px;
+			}
+		}
+		h3 {
+			font-size: 1.8em;
+			font-weight: 100;
+			margin-top: 10px;
+			margin-left: 30px;
+			@media (max-width: 850px) {
+				font-size: 1.2em;
+			}
+			@media (max-width: 460px) {
+				font-size: 1em;
+			}
+		}
+		button {
+			width: 50%;
+			height: 20%;
+			margin-top: 60px;
+			margin-left: 30px;
+			color: white;
+			font-size: 18px;
+			font-weight: 100;
+			background-color: $darkMainColor;
+			border: 1px solid $darkMainColor;
+			border-radius: 10px;
+			@media (max-width: 850px) {
+				font-size: 14px;
+				margin-top: 40px;
+			}
+			@media (max-width: 460px) {
+				font-size: 0.7em;
+				margin-top: 20px;
+			}
+		}
+	}
+}
+
+.loans {
+	background-color: white;
+	a {
+		font-size: 20px;
+		color: $mainColor;	
+		float: right;		
+	}
+	
+	.loan {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		padding: 40px 0;
+
+		.keysPic {
+			width: 40%;
+			height: 200px;
+			margin: 0;
+			background-image: url("../images/keys.jpg");
+			background-repeat: no-repeat;
+			p{
+				visibility: hidden;
+			}
+			@media (max-width: 800px) {
+			display: none;
+			}
+		}
+		.keysText {
+			width: 60%;
+			height: 100%;
+			position: relative;
+			h4 {
+				font-size: 24px;
+				font-weight: normal;
+			}
+			p {
+				margin-top: 40px;
+				margin-right: 20px;
+			}
+			a {
+				margin-top: 20px;
+				margin-right: 20px;
+				float: right;
+			}
+		}
+	}
+	.credit {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	
+
+		h4 {
+			font-size: 24px;
+			font-weight: normal;
+			width: 100%;
+			text-align: center;
+			margin-top: 30px;
+		}
+		div {
+			margin-top:20px;
+			width: 100%;
+			position: relative;
+			p {
+				width: 50%;
+			}
+			.left {
+				float: left;
+				padding-left: 40px;
+			}
+			.right {
+				float: right;
+				text-align: right;
+				padding-right: 40px;
+			}
+		}
+		.ui-slider .ui-slider-handle {
+			width: 3.5em;
+			height: 2em;
+			background-color: $mainColor;
+			border: 1px solid $mainColor;
+			border-radius: 5px;
+		}
+		.ui-slider .ui-slider-range {
+			background-color: $backgroundColor;
+		}
+		#slider1, #slider2{
+			width: 85%;
+			margin-left: 10px;
+		}
+		.creditEnd {
+			width: 100%;
+			position: relative;
+			.line {
+			width: 100%;
+			height: 2px;
+			margin-top: 40px;
+			background-color: $mainColor;
+			}
+			.amount {
+				width: 50%;
+				display: flex;
+				flex-wrap: wrap;
+				p {
+					width: auto;
+					display: inline;
+				}
+				input {
+					width: 20%;
+					display: inline-block;
+					color: $mainColor;
+					border: none;
+					margin-left: 5px;
+				}
+				input+p {
+					color: $mainColor;
+				}
+				
+			}
+			a {
+				font-size: 20px;
+				color: $mainColor;	
+				float: right;	
+				margin-top: 20px;
+			}
+		}
+	}
+}
+footer {
+	color: grey;
+	p {
+		font-size: 16px;
+	}
+	div {
+		position: relative;
+		p {
+			font-size: 12px;
+			display: inline-block;
+			float: left;
+		}
+	}
+	ul {
+		list-style: none;
+		float: right;
+	}
+	li {
+		display: inline-block;
+		font-size: 12px;
+	}
+}

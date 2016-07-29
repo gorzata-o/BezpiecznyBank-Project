@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bezpieczny Bank</title>
+	<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="bower_components/jquery-ui/themes/base/slider.css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	
+
+	<script src="bower_components/jquery/jquery.min.js"></script>
+	<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+	 <script src="js/app.js"></script>
+
+</head>
+
+<body>
+	<div class="grid-container">
+		<div class="row">
+			<header class="col-12">
+				<a href="#">
+					<img src="images/Logo.svg"/>
+				</a>
+				<div class="rightPart">
+					<span>
+						<input type="text" placeholder="Szukaj" class="search">
+						<button  class="searchBtn"><i class="fa fa-search" aria-hidden="true"></i></button>
+					</span>
+					<button class="logIn">Zaloguj</button>
+				</div>
+			</header>
+		</div>
+		<section class="row">	
+			<nav class="col-12">
+				<div class="menu">
+					<div class="menuElement">Menu</div>
+					<ul class="menuElements">
+						<li><a href="#">Klienci indywidualni</a></li>
+						<li><a href="#">Przedsiębiorcy</a></li>
+						<li><a href="#">Firmy i samorządy</a></li>
+						<li><a href="#">Rolnicy</a></li>
+						<li><a href="#">Korporacje</a></li>
+						<li><a href="#">Uczniowie, studenci</a></li>
+					</ul>
+					<div class="bankName">Bezpieczny Bank</div>
+				</div>
+			</nav>
+			<div class="blue col-12"></div>
+		</section>
+		<section class="row">
+			<div class="banner col-12">
+				<img src="images/baner.jpg">
+				<div class="travel col-4">
+					<p>Skorzystaj ze secjalnej oferty</p>
+					<h3>PODRÓŻUJ BEZ OBAW</h3>
+					<button>SPRAWDŹ</button>
+				</div>
+			</div>
+		</section>
+		<section class="loans row">
+			<div class="col-6 loan">
+				<div class="keysPic"><p>.</p></div>
+				<div class="keysText">
+					<h4>Kredyt hipoteczny</h4>
+					<p>Lorem ipsum dolor sit amet, quam justo, at elit tristique erat tincidunt in hendrerit, luctus nunc ac suspendisse quisque. Nisl wisi, mauris commodo erat arcu tortor eros. Tincidunt nam vel rutrum sodales id sodales, a class nec blandit, ac at euismod aliquam, velit aliquet wisi ut donec donec. Vulputate suspendisse a at velit at a, urna at adipiscing erat neque, pede proin.</p>
+					<a href="#">Dowiedz się więcej</a>
+				</div>
+			</div>	
+
+			<div class="col-6 credit">
+				<h4>Pożyczka gotówkowa</h4>
+				<div class="amount">
+					<p class="left">Kwota</p>
+					<p class="right">10 000</p>
+				</div>	
+				<div id="slider1"></div>
+				<div class="time">
+					<p class="left">Czas trwania</p>
+					<p class="right">2 lata</p>
+				</div>
+				<div id="slider2"></div>
+				<div class="creditEnd">
+				<div class="line"></div>
+					<div class="amount left">
+						<p>Rata</p>
+						<input id="amount">
+						<p>zł</p>
+					</div>
+					<a href="#" class="right">Dowiedz się więcej</a>
+				</div>
+		</section>
+			
+		<section class="triple1 row">
+		
+			<div class="col-4"> 
+
+				<img src="images/comp.svg">
+				<h4>Konto online</h4>
+				<p>Załóż konto przez internet</p>
+				<button>Otwórz konto</button>
+			</div>
+			<div class="dymek col-4"> 
+				<img src="images/dymek.svg">
+				<h4>Rozpocznij chat</h4>
+				<p>Porozmawiaj z doradcą</p>
+				<button>Zapytaj</button>
+			</div>
+			<div class="procent col-4">
+				<img src="images/percent.svg">
+				<h4>Kredyt gotówkowy</h4>
+				<p>Ustal ratę i datę spłaty</p>
+				<button>Sprawdź</button> 
+			</div>
+		</section>
+
+		<section class="triple2 row">
+			<div class="client01 col-4">
+				<h4>Klienci Indywidualni</h4>
+				<ul class="adds">
+					<li>Konta</li>
+					<li>Oszczędności</li>
+					<li>Kredyty</li>
+					<li>Karty</li>
+					<li>Ubezpieczenia</li>
+					<li>Inwestycje</li>
+					<li>Programy</li>
+					<li>Bankowość elektroniczna</li>
+				</ul>
+			</div>
+			<div class="client02 col-4">
+				<h4>Klienci VIP Premium</h4>
+				<ul class="adds">
+					<li>Konta</li>
+					<li>Lokaty i inwestycje</li>
+					<li>Kredyty</li>
+					<li>Karty</li>
+					<li>Ubezpieczenia</li>
+					<li>Ubezpieczenia inwestycyjne</li>
+					<li>Programy</li>
+					<li>Program VIP Premium</li>
+				</ul>
+			</div>
+			<div class="client03 col-4">
+				<h4>Małe firmy i korporacje</h4>
+				<ul class="adds">
+					<li>Konta</li>
+					<li>Lokaty i inwestycje</li>
+					<li>Kredyty</li>
+					<li>Transakcje walutowe</li>
+					<li>Gwarancje bankowe</li>
+					<li>Terminale płatnicze</li>
+					<li>Faktoring</li>
+					<li>Bankowość elektroniczna</li>
+				</ul>
+			</div>
+		</section>
+		<footer class="row col-12">
+			<p>801 222 222</p>
+			<div>
+				<p>&copy 2015 BB Bezpieczny Bank S.A. Wszelkie prawa zastrzeżone. Korzystanie z serisu oznacza akceptację regulaminu</p>
+			</div>
+			<div>
+				<ul>
+					<li>Mapa serwisu</li>
+					<li>|  English</li>
+					<li>|  Twitter</li>
+					<li>|  Facebook</li>
+				</ul>
+			</div>
+		</footer>
+
+	</div>
+
+   
+  
+</body>
+</html>
